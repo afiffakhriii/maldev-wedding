@@ -27,9 +27,6 @@ export default function Hero() {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-center p-8 lg:p-16 bg-white gap-8 min-h-[calc(100vh-80px)]">
       <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 max-w-lg">
-        <span className="text-xs font-semibold px-4 py-2 bg-[var(--primary)] rounded-full text-gray-600">
-          Undangan Impianmu Dimulai di Sini
-        </span>
         <h1 className="text-5xl md:text-6xl font-bold text-[var(--primary)] leading-tight">
           Kisah Kita <br className="hidden md:block"/>
           Sebuah Awal <br className="hidden md:block"/>

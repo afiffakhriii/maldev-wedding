@@ -1,6 +1,7 @@
 // src/app/layout.js
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import Header from '@/components/Header'; 
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -9,14 +10,20 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Maldev Wedding Invitation',
+  title: {
+    template: '%s - Maldev Wedding',
+    default: 'Maldev Wedding Invitation',
+  },
   description: 'Digital wedding invitation by Maldev & Wedding',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

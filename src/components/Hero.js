@@ -26,7 +26,6 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col lg:flex-row items-center justify-center p-8 lg:p-16 bg-white gap-8 min-h-[calc(100vh-80px)]">
-      {/* Konten Teks di Kiri */}
       <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 max-w-lg">
         <span className="text-xs font-semibold px-4 py-2 bg-[var(--primary)] rounded-full text-gray-600">
           Undangan Impianmu Dimulai di Sini
@@ -45,7 +44,6 @@ export default function Hero() {
           </button>
         </div>
       </div>
-      {/* Konten Gambar di Kanan */}
       <div className="flex-1 flex justify-center items-center relative mt-8 lg:mt-0">
         <div className="bg-[var(--primary)] rounded-3xl p-4 md:p-6 w-[300px] h-[300px] md:w-[400px] md:h-[400px] flex justify-center items-center">
           <div className="w-full h-full relative overflow-hidden rounded-3xl">
